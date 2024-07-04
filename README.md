@@ -1,14 +1,6 @@
 # LEETCODE-Linked-List-2181
 The provided code snippet for the `mergeNodes` method is intended to solve a specific problem involving a linked list. However, there seem to be a couple of issues in the logic. Let me first explain the problem this code aims to solve, then correct and optimize the logic.
-
-### Problem Description
-You are given a linked list where every two consecutive nodes represent a segment, and each segment ends with a zero node. The goal is to merge nodes between zeros and create a new linked list where each node represents the sum of values in a segment.
-
-### Issues with the Code
-1. The code checks `head.next.val == 0` but it should start checking from the second node, as the first node in the segment is always zero.
-2. There is a potential null pointer dereference if the list does not have enough nodes.
-
-### Corrected Code
+### Code
 Here’s a corrected and optimized version of the code:
 
 ```java
